@@ -14,7 +14,7 @@ export default function Projects() {
         "JWT",
         "React-Router",
       ],
-      image: "/Shopmate.png",
+      image: "Shopmate.png",
       githubUrl: "https://github.com/thekmanish/ShopMate",
       liveUrl: "https://shop-mate-qgsj.vercel.app/",
       dimensions: { width: 1920, height: 920 }, // Added dimensions

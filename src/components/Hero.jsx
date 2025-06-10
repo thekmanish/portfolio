@@ -125,7 +125,7 @@ export default function Hero() {
                 {/* Replace this div with your actual image */}
                 {/* <div className="text-4xl text-gray-500">Your Image</div> */}
                 <img
-                  src="/manish.webp"
+                  src="manish.webp"
                   alt="Profile"
                   className="object-cover w-full h-full"
                 />

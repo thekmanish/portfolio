@@ -4,40 +4,40 @@ export default function Skills() {
       name: "Languages Known",
       skills: [
         { name: "JavaScript", logo: "javascript.svg" },
-        { name: "Python", logo: "/python.svg" },
-        { name: "PHP", logo: "/php.svg" },
-        { name: "C++", logo: "/cpp.svg" },
+        { name: "Python", logo: "python.svg" },
+        { name: "PHP", logo: "php.svg" },
+        { name: "C++", logo: "cpp.svg" },
       ]
     },
     {
       name: "Frontend",
       skills: [
-        { name: "React", logo: "/react.svg" },
-        { name: "Tailwind CSS", logo: "/tailwind.svg" },
+        { name: "React", logo: "react.svg" },
+        { name: "Tailwind CSS", logo: "tailwind.svg" },
       ]
     },
     {
       name: "Backend",
       skills: [
-        { name: "Node.js", logo: "/nodejs.svg" },
-        { name: "Express", logo: "/express.svg" },
+        { name: "Node.js", logo: "nodejs.svg" },
+        { name: "Express", logo: "express.svg" },
       ]
     },
     {
       name: "Databases",
       skills: [
-        { name: "SQL", logo: "/sql.svg" },
-        { name: "MongoDB", logo: "/mongodb.svg" },
+        { name: "SQL", logo: "sql.svg" },
+        { name: "MongoDB", logo: "mongodb.svg" },
       ]
     },
     {
       name: "Tools & More",
       skills: [
-        { name: "Git", logo: "/git.svg" },
-        { name: "Github", logo: "/github.svg" },
-        { name: "Zustand", logo: "/zustand.svg" },
-        { name: "Redux Tookit", logo: "/redux.svg" },
-        { name: "REST API", logo: "/restapi.svg" },
+        { name: "Git", logo: "git.svg" },
+        { name: "Github", logo: "github.svg" },
+        { name: "Zustand", logo: "zustand.svg" },
+        { name: "Redux Tookit", logo: "redux.svg" },
+        { name: "REST API", logo: "restapi.svg" },
 
       ]
     }
