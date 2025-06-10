@@ -17,44 +17,37 @@ export default function Projects() {
       image: "Shopmate.png",
       githubUrl: "https://github.com/thekmanish/ShopMate",
       liveUrl: "https://shop-mate-qgsj.vercel.app/",
-      dimensions: { width: 1920, height: 920 }, // Added dimensions
+      dimensions: { width: 1920, height: 920 },
     },
   ];
 
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-br from-purple-900/80 via-gray-900 to-gray-900"
+      className="py-16 bg-gradient-to-br from-purple-900/80 via-gray-900 to-gray-900"
     >
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-3">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-white mb-2">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
               Featured Project
             </span>
           </h2>
-          <p className="text-purple-200/80 max-w-2xl mx-auto">
+          <p className="text-purple-200/80 max-w-2xl mx-auto text-sm">
             Here's what I've been building recently
           </p>
         </div>
 
-        {/* Project card with proper dimensions and borders */}
         <div className="flex justify-center">
-          <div className="w-full max-w-[1800px] group">
-            {" "}
-            {/* Adjusted max-width */}
-            <div className="relative overflow-hidden rounded-xl border-2 border-purple-800/50 hover:border-purple-500/70 transition-all duration-500 bg-gray-900/50 p-4">
-              {" "}
-              {/* Added padding and border */}
-              {/* Gradient overlay */}
+          <div className="w-full max-w-4xl group">
+            <div className="relative overflow-hidden rounded-lg border border-purple-800/50 hover:border-purple-500/70 transition-all duration-500 bg-gray-900/50 p-2 sm:p-3">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-              {/* Project image container with proper aspect ratio */}
+              
               <div
-                className="relative overflow-hidden bg-gray-900 rounded-lg border border-gray-700"
+                className="relative overflow-hidden bg-gray-900 rounded-md border border-gray-700"
                 style={{
                   aspectRatio: `${projects[0].dimensions.width}/${projects[0].dimensions.height}`,
-                  maxHeight: "80vh", // Limits height while maintaining aspect ratio
+                  maxHeight: "60vh",
                 }}
               >
                 <img
@@ -64,36 +57,34 @@ export default function Projects() {
                   loading="lazy"
                 />
               </div>
-              {/* Project details */}
-              <div className="p-8 bg-gray-800/70 backdrop-blur-sm mt-4 rounded-lg border border-gray-700 relative z-20">
-                <h3 className="text-3xl font-bold text-white mb-3">
+              
+              <div className="p-4 sm:p-6 bg-gray-800/70 backdrop-blur-sm mt-3 rounded-md border border-gray-700 relative z-20">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   {projects[0].title}
                 </h3>
-                <p className="text-purple-100/80 mb-6 text-lg">
+                <p className="text-purple-100/80 mb-4 text-base">
                   {projects[0].description}
                 </p>
 
-                {/* Tech tags */}
-                <div className="flex flex-wrap gap-3 mb-8">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {projects[0].tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-4 py-1.5 text-sm rounded-full bg-purple-900/50 text-purple-100"
+                      className="px-3 py-1 text-xs rounded-full bg-purple-900/50 text-purple-100"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                {/* Links */}
-                <div className="flex gap-6">
+                <div className="flex flex-wrap gap-3">
                   <a
                     href={projects[0].githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white transition-colors text-lg"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white transition-colors text-sm"
                   >
-                    <GitHubIcon className="w-6 h-6" />
+                    <GitHubIcon className="w-5 h-5" />
                     Code
                   </a>
                   {projects[0].liveUrl && (
@@ -101,9 +92,9 @@ export default function Projects() {
                       href={projects[0].liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 rounded-lg border border-purple-500 text-purple-100 hover:bg-purple-500/20 transition-colors text-lg"
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg border border-purple-500 text-purple-100 hover:bg-purple-500/20 transition-colors text-sm"
                     >
-                      <ExternalLinkIcon className="w-6 h-6" />
+                      <ExternalLinkIcon className="w-5 h-5" />
                       Live Demo
                     </a>
                   )}
@@ -113,21 +104,18 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* Future projects note */}
-        <div className="mt-16 text-center text-purple-200/60 italic">
+        <div className="mt-12 text-center text-purple-200/60 text-sm italic">
           More projects coming soon...
         </div>
 
-        {/* Decorative divider */}
-        <div className="mt-20 flex justify-center">
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-50 rounded-full"></div>
+        <div className="mt-16 flex justify-center">
+          <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-50 rounded-full"></div>
         </div>
       </div>
     </section>
   );
 }
 
-// Icon components remain the same
 function GitHubIcon({ className }) {
   return (
     <svg className={className} fill="currentColor" viewBox="0 0 24 24">

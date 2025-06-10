@@ -16,36 +16,36 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-16 bg-gradient-to-b from-gray-900 to-gray-950">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
             Get In Touch
           </h2>
-          <p className="text-blue-100 max-w-lg mx-auto">
+          <p className="text-blue-100 max-w-lg mx-auto text-sm sm:text-base">
             I'm currently looking for new opportunities. Feel free to reach out via phone, email, or connect with me on social platforms.
           </p>
         </div>
 
-        {/* Contact Content - Now single column focused on direct contact */}
+        {/* Contact Content */}
         <div className="max-w-md mx-auto">
-          <div className="p-8 rounded-xl bg-gray-800 border border-blue-900/50 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-            <div className="space-y-8">
+          <div className="p-6 sm:p-8 rounded-xl bg-gray-800 border border-blue-900/50 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+            <div className="space-y-6 sm:space-y-8">
               {/* Phone */}
               <div className="group flex items-center">
                 <a 
                   href={`tel:${phoneNumber}`}
-                  className="bg-gradient-to-br from-blue-900/30 to-blue-900/10 p-4 rounded-2xl mr-6 group-hover:from-cyan-900/30 group-hover:to-cyan-900/10 transition-all duration-300 shadow-md group-hover:shadow-cyan-500/20"
+                  className="bg-gradient-to-br from-blue-900/30 to-blue-900/10 p-3 sm:p-4 rounded-2xl mr-4 sm:mr-6 group-hover:from-cyan-900/30 group-hover:to-cyan-900/10 transition-all duration-300 shadow-md group-hover:shadow-cyan-500/20"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-8 sm:w-8 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </a>
-                <div>
-                  <p className="text-blue-100 text-sm mb-1">Call me at</p>
+                <div className="overflow-hidden">
+                  <p className="text-blue-100 text-xs sm:text-sm mb-1">Call me at</p>
                   <a 
                     href={`tel:${phoneNumber}`}
-                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-xl font-bold group-hover:underline"
+                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-lg sm:text-xl font-bold group-hover:underline truncate block"
                   >
                     {phoneNumber}
                   </a>
@@ -56,17 +56,17 @@ export default function Contact() {
               <div className="group flex items-center">
                 <a 
                   href={`mailto:${emailAddress}`}
-                  className="bg-gradient-to-br from-blue-900/30 to-blue-900/10 p-4 rounded-2xl mr-6 group-hover:from-cyan-900/30 group-hover:to-cyan-900/10 transition-all duration-300 shadow-md group-hover:shadow-cyan-500/20"
+                  className="bg-gradient-to-br from-blue-900/30 to-blue-900/10 p-3 sm:p-4 rounded-2xl mr-4 sm:mr-6 group-hover:from-cyan-900/30 group-hover:to-cyan-900/10 transition-all duration-300 shadow-md group-hover:shadow-cyan-500/20"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-8 sm:w-8 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </a>
-                <div>
-                  <p className="text-blue-100 text-sm mb-1">Email me at</p>
+                <div className="overflow-hidden">
+                  <p className="text-blue-100 text-xs sm:text-sm mb-1">Email me at</p>
                   <a 
                     href={`mailto:${emailAddress}`}
-                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-xl font-bold group-hover:underline"
+                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-lg sm:text-xl font-bold group-hover:underline break-all"
                   >
                     {emailAddress}
                   </a>
@@ -74,22 +74,22 @@ export default function Contact() {
               </div>
 
               {/* Social Links */}
-              <div className="pt-6">
-                <p className="text-blue-100 mb-4 text-center text-lg">Or connect with me on</p>
-                <div className="flex justify-center space-x-6">
+              <div className="pt-4 sm:pt-6">
+                <p className="text-blue-100 mb-3 sm:mb-4 text-center text-sm sm:text-lg">Or connect with me on</p>
+                <div className="flex justify-center space-x-4 sm:space-x-6">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-blue-900/20 hover:bg-cyan-500/20 p-4 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/20"
+                      className="bg-blue-900/20 hover:bg-cyan-500/20 p-3 sm:p-4 rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/20"
                       aria-label={social.name}
                     >
                       <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 24 24" 
-                        className="h-6 w-6 fill-current text-white"
+                        className="h-5 w-5 sm:h-6 sm:w-6 fill-current text-white"
                       >
                         <path d={social.icon} />
                       </svg>
