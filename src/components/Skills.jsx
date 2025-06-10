@@ -3,7 +3,7 @@ export default function Skills() {
     {
       name: "Languages Known",
       skills: [
-        { name: "JavaScript", logo: "/javascript.svg" },
+        { name: "JavaScript", logo: "javascript.svg" },
         { name: "Python", logo: "/python.svg" },
         { name: "PHP", logo: "/php.svg" },
         { name: "C++", logo: "/cpp.svg" },
