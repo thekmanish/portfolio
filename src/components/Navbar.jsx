@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function PortfolioNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,8 +17,11 @@ export default function PortfolioNavbar() {
 
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/thekmanish" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/manish-kumar-singh-80b4362a4/" },
-    { name: "Email", url: "itsksmanish@gmail.com" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/manish-kumar-singh-80b4362a4/",
+    },
+    { name: "Email", url: "officialmanishksingh@gmail.com" },
   ];
 
   useEffect(() => {
@@ -104,7 +107,11 @@ export default function PortfolioNavbar() {
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
-                  href={social.name === "Email" ? `mailto:${social.url}` : social.url}
+                  href={
+                    social.name === "Email"
+                      ? `mailto:${social.url}`
+                      : social.url
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors duration-300 text-xl"
@@ -183,15 +190,17 @@ export default function PortfolioNavbar() {
             {socialLinks.map((social) => (
               <a
                 key={social.name}
-                href={social.name === "Email" ? `mailto:${social.url}` : social.url}
+                href={
+                  social.name === "Email" ? `mailto:${social.url}` : social.url
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-300 text-lg"
                 aria-label={social.name}
               >
-                {social.name === "GitHub" && <FaGithub/>}
-                {social.name === "LinkedIn" && <FaLinkedin/>}
-                {social.name === "Email" && <FaEnvelope/>}
+                {social.name === "GitHub" && <FaGithub />}
+                {social.name === "LinkedIn" && <FaLinkedin />}
+                {social.name === "Email" && <FaEnvelope />}
               </a>
             ))}
           </div>

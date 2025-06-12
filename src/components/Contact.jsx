@@ -1,6 +1,6 @@
 export default function Contact() {
   const phoneNumber = "+91 7217799769";
-  const emailAddress = "itsksmanish@gmail.com";
+  const emailAddress = "officialmanishksingh@gmail.com";
   const socialLinks = [
     {
       name: "GitHub",
@@ -45,7 +45,7 @@ export default function Contact() {
                   <p className="text-blue-100 text-xs sm:text-sm mb-1">Call me at</p>
                   <a 
                     href={`tel:${phoneNumber}`}
-                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-lg sm:text-xl font-bold group-hover:underline truncate block"
+                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-sm sm:text-base font-bold group-hover:underline truncate block"
                   >
                     {phoneNumber}
                   </a>
@@ -66,7 +66,7 @@ export default function Contact() {
                   <p className="text-blue-100 text-xs sm:text-sm mb-1">Email me at</p>
                   <a 
                     href={`mailto:${emailAddress}`}
-                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-lg sm:text-xl font-bold group-hover:underline break-all"
+                    className="text-white hover:text-cyan-300 transition-colors duration-200 text-sm sm:text-base font-bold group-hover:underline break-all"
                   >
                     {emailAddress}
                   </a>
