@@ -60,6 +60,17 @@ export default function Hero() {
     }
   };
 
+  const downloadResume = () => {
+    // Replace with your actual resume file path
+    const resumeUrl = "ManishKumarSingh_Resume.pdf";
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "ManishKumarSingh_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -95,21 +106,41 @@ export default function Hero() {
 
             <p className="text-gray-400 text-lg sm:text-xl mb-10 max-w-lg mx-auto lg:mx-0">
               I am an aspiring developer, building simple and user-friendly
-              websites with clean code. Let’s create something great together!
+              websites with clean code. Let's create something great together!
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start items-center">
+              {/* <button
                 onClick={() => scrollToSection("projects")}
-                className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-1"
+                className="px-5 py-2.5 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-0.5 text-sm sm:text-base"
               >
-                View My Projects
+                View Projects
+              </button> */}
+
+              <button
+                onClick={downloadResume}
+                className="px-5 py-2.5 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center gap-1.5 text-sm sm:text-base group"
+              >
+                <span>Download CV</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 group-hover:translate-y-0.5 transition-transform"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </button>
+
               <button
                 onClick={() => scrollToSection("contact")}
-                className="px-6 py-3 sm:px-8 sm:py-4 border border-gray-600 text-white font-medium rounded-lg hover:bg-gray-800/50 transition-all duration-300"
+                className="px-5 py-2.5 bg-gradient-to-r from-purple-500 to-blue-600 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-0.5 text-sm sm:text-base"
               >
-                Get In Touch
+                Contact Me
               </button>
             </div>
           </div>
@@ -122,8 +153,6 @@ export default function Hero() {
 
               {/* Profile image container */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-gray-700 shadow-2xl bg-gray-800 flex items-center justify-center">
-                {/* Replace this div with your actual image */}
-                {/* <div className="text-4xl text-gray-500">Your Image</div> */}
                 <img
                   src="manish.webp"
                   alt="Profile"
@@ -142,18 +171,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      {/* <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-        <a href="#projects" className="animate-bounce block">
-          <div className="w-8 h-14 border-4 border-gray-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-gray-400 rounded-full mt-2"></div>
-          </div>
-          <span className="text-gray-400 text-xs mt-2 block text-center">
-            Scroll Down
-          </span>
-        </a>
-      </div> */}
     </section>
   );
 }
