@@ -44,7 +44,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-gray-900 via-gray-900 to-purple-900/80">
+    <section id="skills" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section header matching hero style */}
         <div className="text-center mb-16">

@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-16 bg-gradient-to-br from-purple-900/80 via-gray-900 to-gray-900"
+      className="py-16 bg-gray-900"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">

@@ -15,7 +15,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-16 bg-gradient-to-b from-gray-900 to-gray-950">
+    <section id="contact" className="py-16 bg-gray-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-12">
