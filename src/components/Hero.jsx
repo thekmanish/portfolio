@@ -69,6 +69,7 @@ export default function Hero() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    console.log("")
   };
 
   return (

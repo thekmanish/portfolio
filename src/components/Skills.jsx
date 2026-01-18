@@ -4,9 +4,8 @@ export default function Skills() {
       name: "Languages Known",
       skills: [
         { name: "JavaScript", logo: "javascript.svg" },
+        { name: "TypeScript", logo: "typescript.svg" },
         { name: "Python", logo: "python.svg" },
-        { name: "PHP", logo: "php.svg" },
-        { name: "C++", logo: "cpp.svg" },
       ]
     },
     {
@@ -19,6 +18,7 @@ export default function Skills() {
     {
       name: "Backend",
       skills: [
+        { name: "Nest.js", logo: "nestjs.svg" },
         { name: "Node.js", logo: "nodejs.svg" },
         { name: "Express", logo: "express.svg" },
       ]
@@ -26,19 +26,20 @@ export default function Skills() {
     {
       name: "Databases",
       skills: [
+        { name: "PostgreSql", logo: "postgresql.svg" },
         { name: "SQL", logo: "sql.svg" },
         { name: "MongoDB", logo: "mongodb.svg" },
+
       ]
     },
     {
       name: "Tools & More",
       skills: [
+        { name: "GitLab", logo: "gitlab.svg" },
         { name: "Git", logo: "git.svg" },
         { name: "Github", logo: "github.svg" },
         { name: "Zustand", logo: "zustand.svg" },
-        { name: "Redux Tookit", logo: "redux.svg" },
         { name: "REST API", logo: "restapi.svg" },
-
       ]
     }
   ];
