@@ -4,8 +4,7 @@ export default function Hero() {
   // Typewriter effect without external libraries
   useEffect(() => {
     const roles = [
-      "Aspiring Full Stack Developer",
-      "React Learner",
+      "Full Stack Developer",
       "Tech Enthusiast",
     ];
     let roleIndex = 0;
