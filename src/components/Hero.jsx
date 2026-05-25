@@ -105,7 +105,7 @@ export default function Hero() {
             </h2>
 
             <p className="text-gray-400 text-lg sm:text-xl mb-10 max-w-lg mx-auto lg:mx-0">
-              I am an aspiring developer, building simple and user-friendly
+              I am a full stack developer, building simple and user-friendly
               websites with clean code. Let's create something great together!
             </p>
 
