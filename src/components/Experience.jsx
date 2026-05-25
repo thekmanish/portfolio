@@ -15,7 +15,7 @@ export default function Experience() {
             <h3 className="text-2xl font-bold text-white">
               Full Stack Developer
             </h3>
-            <span className="text-sm text-gray-400">Sep 2025 – Present</span>
+            <span className="text-sm text-gray-400">Sep 2025 – Feb 2025</span>
           </div>
 
           <p className="text-blue-400 font-semibold mb-4">OPSKUBE</p>
