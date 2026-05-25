@@ -5,7 +5,6 @@ export default function Skills() {
       skills: [
         { name: "JavaScript", logo: "javascript.svg" },
         { name: "TypeScript", logo: "typescript.svg" },
-        { name: "Python", logo: "python.svg" },
       ]
     },
     {
